@@ -377,7 +377,7 @@ class SmartWordlePlayer(BasicWordlePlayer):
 
 
 if __name__ == '__main__':
-    all_words = open('./all_words.txt')
+    all_words = open('../all_words.txt')
     words_space = list()
 
     for line in all_words.readlines():

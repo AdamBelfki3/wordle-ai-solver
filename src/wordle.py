@@ -6,7 +6,7 @@ from wordle_solver import BasicWordlePlayer
 from smart_wordle_solver import SmartWordlePlayer, SmartWordlePlayer2
 from wordle_play_agents import WordleSearchProblem, custom_depth_first_search
 
-DEFAULT_WORDS = './all_words.txt'
+DEFAULT_WORDS = '../all_words.txt'
 DEFAULT_ATTEMPTS = 6
 DEFAULT_PLAYER = 'interactive'
 GREEN_TILE = '🟩'

@@ -2,7 +2,7 @@
 
 def main():
 
-    all_words = open('./all_words.txt')
+    all_words = open('../all_words.txt')
     all_words_lines = all_words.readlines()
 
     all_words_list = list()

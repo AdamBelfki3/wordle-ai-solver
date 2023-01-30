@@ -5,7 +5,7 @@ from wordle_play_agents import WordleSearchProblem, custom_depth_first_search
 from collections import defaultdict
 import plotly.graph_objects as go
 
-DEFAULT_WORDS = './all_words.txt'
+DEFAULT_WORDS = '../all_words.txt'
 DEFAULT_ATTEMPTS = 6
 DEFAULT_PLAYER = 'interactive'
 
