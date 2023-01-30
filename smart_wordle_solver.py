@@ -58,13 +58,9 @@ class SmartWordlePlayer2(BasicWordlePlayer):
         letters_freqs = defaultdict(lambda: 0)
         transitions_freqs = defaultdict(lambda: 0)
 
-        letters_space_size = 5 * len(words_space)
-        transitions_space_size = 4 * len(words_space)
-
         for word in words_space:
             word = word.strip()
 
-            #penalize = False
             for ii, char in enumerate(word):
                 letters_freqs[(char, ii)] += 1
 
@@ -142,9 +138,6 @@ class SmartWordlePlayer2(BasicWordlePlayer):
 
             if penalize:
                 word_prob = word_prob * repeated_transitions_prob
-
-            if word == 'stair':
-                print(f'Prob of stair: {word_prob}')
 
             for ii in range(0, 5):
                 if best_guess[ii][1] < word_prob and (word, word_prob) not in best_guess:
